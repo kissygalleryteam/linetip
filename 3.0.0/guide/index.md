@@ -5,7 +5,7 @@
 ## 初始化组件
 ```
 	// 初级配置（使用组件默认参数）
-    S.use('kg/LineTip/3.0.0/index', function (S, Fromtochart) {
+    S.use('kg/lineTip/3.0.1/index', function (S, Fromtochart) {
 
         var lineTip = new LineTip();
 

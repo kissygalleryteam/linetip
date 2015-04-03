@@ -1,4 +1,4 @@
-KISSY.add('kg/linetip/3.0.0/lib/main',["node","base"],function(S ,require, exports, module) {
+KISSY.add('kg/linetip/3.0.1/lib/main',["node","base"],function(S ,require, exports, module) {
  
 var EMPTY = '';
 var $ = require('node').all;

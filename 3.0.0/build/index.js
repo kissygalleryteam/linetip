@@ -1,4 +1,4 @@
-KISSY.add('kg/linetip/3.0.0/index',["node","base"],function(S ,require, exports, module) {
+KISSY.add('kg/linetip/3.0.1/index',["node","base"],function(S ,require, exports, module) {
  ;(function(doc) {
     var $ = require('node').all;
     var Base = require('base');

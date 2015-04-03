@@ -95,7 +95,7 @@
     };
 
 
-    var Linetip = function(options) {
+    var linetip = function(options) {
 
         var defaultOptions = {
             // 整体线条圆环颜色
@@ -373,4 +373,4 @@
         }
     });
 
-    module.exports = LineTip;
+    module.exports = linetip;
