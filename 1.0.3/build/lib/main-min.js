@@ -1,0 +1,1 @@
+KISSY.add("kg/linetip/1.0.3/lib/main",["node","base"],function(i,n,e,a){var t=(n("node").all,n("base"));a.exports=t.extend({initializer:function(){}},{ATTRS:{}})});
