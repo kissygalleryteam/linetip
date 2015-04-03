@@ -1,1 +1,0 @@
-KISSY.config("requires",{"kg/linetip/2.0.1/index":["node","base"],"kg/linetip/2.0.1/lib/main":["node","base"]});
