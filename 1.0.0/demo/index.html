@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fromtochart的demo</title>
+    <script src="//g.alicdn.com/kissy/k/1.4.8/seed-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+   
+
+    <script>
+    var S = KISSY;
+
+    if (S.Config.debug) {  // 链接后加ks-debug=true
+        var debugPath = "http://127.0.0.1:5555/";
+        S.config({
+            packages: [{
+                name: "kg/LineTip/1.0.0",
+                path: debugPath,
+                charset: "utf-8",
+                ignorePackageNameInUri: true
+            }]
+        });
+    }
+
+    S.use('kg/LineTip/1.0.0/index', function(S, LineTip) {
+
+        //usage:
+        var lineTip = new LineTip({
+            points: {
+                color: "#fff",
+                size: 2,
+                radius: 4,
+                opacity: 0.8,
+                animateTime: 0.5,
+                animateType: "ease"
+            },
+            line: {
+                color: "#fff",
+                size: 2,
+                opacity: 0.6,
+                animateTime: 1,
+                animateType: "ease"
+            }
+        });
+
+        lineTip.add({
+            points: [
+                [0, 0],
+                [100, 0],
+                [150, -100]
+            ],
+
+            html: {
+                width: 200,
+                height: 200,
+                tpl: function() {
+                    return '<div style="padding:5px">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs</div>';
+                }
+            }
+        });
+
+        lineTip.add({
+            points: [
+                [0, 0],
+                [100, 0],
+                [150, 100]
+            ],
+            html: {
+                width: 200,
+                height: 200,
+                tpl: function() {
+                    return '<div style="padding:5px">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs</div>';
+                }
+            }
+        });
+
+        lineTip.add({
+            points: [
+                [0, 0],
+                [-100, 0],
+                [-150, -100]
+            ],
+            html: {
+                width: 200,
+                height: 200,
+                tpl: function() {
+                    return '<div style="padding:5px">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs</div>';
+                }
+            }
+        });
+
+        lineTip.add({
+            points: [
+                [0, 0],
+                [-100, 0],
+                [-150, 100]
+            ],
+            html: {
+                width: 200,
+                height: 200,
+                tpl: function() {
+                    return '<div style="padding:5px">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs</div>';
+                }
+            }
+        });
+
+    })
+    </script>
+</body>
+
+</html>
