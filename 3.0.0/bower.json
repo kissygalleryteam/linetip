@@ -1,0 +1,12 @@
+{
+    "name": "linetip",
+    "version": "3.0.0",
+    "main": "index.js",
+    "ignore": [
+        "**/*",
+        "!index.js",
+        "!index.css",
+        "!lib/**/*"
+    ],
+    "dependencies": {}
+}
