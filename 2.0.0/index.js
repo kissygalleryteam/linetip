@@ -1,4 +1,4 @@
-;(function(doc) {
+    var doc = document;
     var $ = require('node').all;
     var Base = require('base');
 
@@ -374,5 +374,3 @@
     });
 
     module.exports = LineTip;
-
-})(document);
