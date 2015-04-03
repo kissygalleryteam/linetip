@@ -7,4 +7,4 @@ KISSY.add(function (S, Node,Demo) {
         })
     });
 
-},{requires:['node','kg/linetip/3.0.1/']});
+},{requires:['node','kg/linetip/3.0.0/']});
